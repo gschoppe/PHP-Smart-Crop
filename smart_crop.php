@@ -393,4 +393,3 @@ class smart_crop {
         return 0;
     }
 }
-?>
