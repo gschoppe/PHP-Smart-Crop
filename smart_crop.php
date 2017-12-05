@@ -204,6 +204,8 @@ class smart_crop {
         }
         // make the final cropped image
         $croppedThumb = imagecreatetruecolor($newW,$newH);
+        imagealphablending( $croppedThumb, false );
+        imagesavealpha( $croppedThumb, true );
         imagecopyresampled($croppedThumb, $temp, 0, 0, $x, $y, $newW, $newH, $newW, $newH);
         imagedestroy($temp);
         return($croppedThumb);
@@ -234,6 +236,8 @@ class smart_crop {
         }
         // make the resized image
         $temp = imagecreatetruecolor($tempW, $tempH);
+        imagealphablending( $croppedThumb, false );
+        imagesavealpha( $croppedThumb, true );
         imagecopyresampled($temp, $this->img, 0, 0, 0, 0, $tempW, $tempH, $w, $h);
         return($temp);
     }
