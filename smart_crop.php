@@ -111,6 +111,7 @@ class smart_crop {
         $yWeight = $this->get_array_weight($sliceArray, $focus);
         // set these values as the focus of the image
         $this->set_focus($x, $y, $xWeight, $yWeight);
+        imagedestroy($temp);
     }
     
     /* set_focus - sets the focal point of an image manually
