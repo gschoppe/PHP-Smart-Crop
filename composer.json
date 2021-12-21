@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "files": ["src/smart_crop.php"]
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
