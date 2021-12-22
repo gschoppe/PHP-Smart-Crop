@@ -2,7 +2,7 @@
     "name": "trismegiste/smart-crop",
     "type": "library",
     "license": "MIT",
-    "description": "Image filters",
+    "description": "Image smart crop filter based on entropy",
     "autoload": {
         "psr-4": {
             "Trismegiste\\ImageTools\\Entropy\\": "src/"
