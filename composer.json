@@ -1,6 +1,5 @@
 {
     "autoload": {
-        "files": ["src/smart_crop.php"],
         "psr-4": {
             "Trismegiste\\ImageTools\\": "src/"
         }

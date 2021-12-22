@@ -5,7 +5,7 @@
  */
 
 /**
- * Test of SmartCrop
+ * Test of SmartCrop filter
  */
 class SmartCropTest extends PHPUnit\Framework\TestCase
 {
