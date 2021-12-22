@@ -4,7 +4,7 @@
  * Smart Crop
  */
 
-namespace Trismegiste\ImageTools;
+namespace Trismegiste\ImageTools\Entropy;
 
 /**
  * Contract for a filter on GD2 image ressource

@@ -4,9 +4,9 @@
  * Smart Crop
  */
 
-namespace Trismegiste\ImageTools\Filter;
+namespace Trismegiste\ImageTools\Entropy\Filter;
 
-use Trismegiste\ImageTools\Filter;
+use Trismegiste\ImageTools\Entropy\Filter;
 
 require_once __DIR__ . '/smart_crop.php';
 
@@ -22,7 +22,7 @@ class SmartCrop implements Filter
     protected $weight;
     protected $sample;
 
-    /** 
+    /**
      * Creates a cropped resized image filter with the focal point of the image 
      * at or close to one of the rule of thirds lines
      *

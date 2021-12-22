@@ -39,3 +39,4 @@ Icon
 /nbproject/
 /vendor
 .phpunit.cache
+/doc/coverage

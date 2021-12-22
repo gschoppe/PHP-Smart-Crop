@@ -12,16 +12,19 @@
          failOnWarning="true"
          verbose="true"
          colors="true">
+    
     <testsuites>
         <testsuite name="default">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
 
-    <coverage cacheDirectory=".phpunit.cache/code-coverage"
-              processUncoveredFiles="true">
+    <coverage cacheDirectory=".phpunit.cache/code-coverage" processUncoveredFiles="true">
         <include>
             <directory suffix=".php">src</directory>
         </include>
+        <report>
+            <html outputDirectory="./doc/coverage" lowUpperBound="50" highLowerBound="90"/>
+        </report> 
     </coverage>
 </phpunit>

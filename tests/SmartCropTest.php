@@ -14,7 +14,7 @@ class SmartCropTest extends PHPUnit\Framework\TestCase
 
     protected function setUp(): void
     {
-        $this->sut = new Trismegiste\ImageTools\Filter\SmartCrop(150, 150);
+        $this->sut = new Trismegiste\ImageTools\Entropy\Filter\SmartCrop(150, 150);
     }
 
     public function testCrop()
