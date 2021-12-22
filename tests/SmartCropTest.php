@@ -14,13 +14,13 @@ class SmartCropTest extends PHPUnit\Framework\TestCase
 
     protected function setUp(): void
     {
-        $img = imagecreatefromstring(file_get_contents(__DIR__ . '/testimg.jpg'));
-        $this->sut = new smart_crop($img);
+        $this->sut = new Trismegiste\ImageTools\Filter\SmartCrop(150, 150);
     }
 
     public function testCrop()
     {
-        $cropped = $this->sut->get_resized(150, 150);
+        $img = imagecreatefromstring(file_get_contents(__DIR__ . '/testimg.jpg'));
+        $cropped = $this->sut->apply($img);
         $this->assertEquals(150, imagesx($cropped));
         $this->assertEquals(150, imagesy($cropped));
     }
